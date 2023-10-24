@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números pares</title>
+</head>
+<body>
+    <h3>Imprima os números pares entre 100 e 1</h3>
+    <p id="resposta"></p>
+
+    <script>
+            let n = 100
+            while (n > 0) {
+            if (n % 2 == 0)
+            document.getElementById("resposta").innerHTML += n + "<br>";            
+            n--
+        }    
+    </script>
+</body>
+</html>

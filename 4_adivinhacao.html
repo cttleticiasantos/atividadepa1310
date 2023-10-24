@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+</head>
+<body>
+    <h3>Parabéns! Você Adivinhou o Número! </h3>
+    <p id="resposta"></p>
+    <script>
+        let primeiro = Number(prompt("Digite um número entre 1 e 10: "));
+        let segundo = 0;
+        let n = 0;
+        
+        while (primeiro % 1 !== 0 || primeiro < 1 || primeiro > 10) {
+            document.getElementById("resposta").innerHTML = "Digite um número válido";
+            primeiro = Number(prompt("Escolha um número entre 1 e 10: "));
+        }
+        
+        while (primeiro !== segundo) {
+            segundo = Number(prompt("Escolha o número correto: "));
+            n++;
+        }
+        
+        document.getElementById("resposta").innerHTML = "Você acertou o número: " + primeiro + " em " + n + " vez(es)";
+        
+    </script>
+</body>
+</html>
