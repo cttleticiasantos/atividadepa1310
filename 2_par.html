@@ -7,14 +7,12 @@
 </head>
 <body>
     <h3>Imprima os números pares entre 100 e 1</h3>
-    <p id="resposta"></p>
-
+    <div id="resposta"></div>
     <script>
             let n = 100
-            while (n > 0) {
-            if (n % 2 == 0)
-            document.getElementById("resposta").innerHTML += n + "<br>";            
-            n--
+            for (let n = 100; n>=2; n = n-2)
+            {
+           document.getElementById("resposta").innerHTML += n + "<br>";            
         }    
     </script>
 </body>
